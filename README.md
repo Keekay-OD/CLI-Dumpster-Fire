@@ -1,70 +1,76 @@
-﻿# Linux Terminal Alias Configuration Guide
+# Interactive Fireworks with aafire
 
-A guide for managing command aliases in Linux/Ubuntu terminals.
+![ASCII Fireworks](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Aafire_example.png/640px-Aafire_example.png)
+
+This Python script creates an interactive fireworks display using the `aafire` library, which generates ASCII art fireworks in your terminal. It's a fun and engaging way to see a fireworks display using just text characters!
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Running the Script](#running-the-script)
+- [Example](#example)
+- [License](#license)
+
+## Features
+
+- Interactive ASCII fireworks display
+- Simple installation process
+- Lightweight and fun!
 
 ## Installation
 
-No additional installation required - uses built-in shell configuration.
+To run this script, you will need to install the required dependencies, including the `libaa-bin` package that provides the `aafire` tool. Follow the instructions below:
 
+### For Debian/Ubuntu-based systems:
 
-## Preview 
-https://youtube.com/shorts/I9Wyodm6cqg?feature=share
+1. Open your terminal.
+2. Install `libaa-bin` by running the following command:
+
+    ```bash
+    sudo apt install libaa-bin
+    ```
+
+### Install Python Dependencies
+
+1. Ensure you have Python 3 and `pip` installed. You can install `pip` with:
+
+    ```bash
+    sudo apt install python3-pip
+    ```
+
+2. If the script has additional Python dependencies, create a file called `requirements.txt` and list them there. Then, install them using:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+> **Note:** Replace `requirements.txt` with any required libraries that the script may use.
+
 ## Usage
 
-### Adding New Aliases
+Once you have installed the necessary packages, you can run the Python script to generate the interactive fireworks display.
 
-1. Open `.bashrc`:
-```bash
-nano ~/.bashrc
-```
+### Running the Script
 
-2. Add alias at the bottom:
-```bash
-alias custom_name='command_to_run'
-```
+To run the code, follow these steps:
 
-3. Apply changes:
-```bash
-source ~/.bashrc
-```
+1. Navigate to the directory where your Python script is located. You can use the `cd` command:
 
-### Common Examples
+    ```bash
+    cd /path/to/your/script
+    ```
 
-```bash
-# Media player shortcut
-alias media='vlc'
+2. Execute the script using Python 3:
 
-# Quick directory navigation
-alias projects='cd ~/projects'
+    ```bash
+    python3 your_script_name.py
+    ```
 
-# Enhanced commands
-alias ll='ls -la'
-```
+   Replace `your_script_name.py` with the actual name of your Python script.
 
-### Managing Aliases
+## Example
 
-Remove temporary alias:
-```bash
-unalias alias_name
-```
+When you run the script, you should see a display of ASCII fireworks like this:
 
-List all aliases:
-```bash
-alias
-```
-
-## Troubleshooting
-
-- Aliases not working after adding: Run `source ~/.bashrc`
-- Alias conflicts: Check existing aliases with `alias` command
-- Permanent vs. temporary: Changes in `.bashrc` are permanent, `unalias` is temporary
-
-## Notes
-
-- Aliases are shell-specific (bash/zsh)
-- Use quotes for commands with spaces/special characters
-- Aliases can include arguments and pipes
-
-## License
-
-MIT License
+- [License](https://youtube.com/shorts/I9Wyodm6cqg?feature=share)
