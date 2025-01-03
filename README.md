@@ -39,14 +39,6 @@ To run this script, you will need to install the required dependencies, includin
     sudo apt install python3-pip
     ```
 
-2. If the script has additional Python dependencies, create a file called `requirements.txt` and list them there. Then, install them using:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-> **Note:** Replace `requirements.txt` with any required libraries that the script may use.
-
 ## Usage
 
 Once you have installed the necessary packages, you can run the Python script to generate the interactive fireworks display.
@@ -64,10 +56,9 @@ To run the code, follow these steps:
 2. Execute the script using Python 3:
 
     ```bash
-    python3 your_script_name.py
+    python3 worlddom.py
     ```
 
-   Replace `your_script_name.py` with the actual name of your Python script.
 
 ## Example
 
