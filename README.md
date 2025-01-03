@@ -64,4 +64,4 @@ To run the code, follow these steps:
 
 When you run the script, you should see a display of ASCII fireworks like this:
 
-- [License](https://youtube.com/shorts/I9Wyodm6cqg?feature=share)
+- [Example Video](https://youtube.com/shorts/I9Wyodm6cqg?feature=share)
